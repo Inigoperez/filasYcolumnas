@@ -66,9 +66,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     for (int y = 1; y <= columas; y++)
                       Expanded(
                         child: Container(
-                          color: Colors.amberAccent,
-                          height: 50,
+                          height: MediaQuery.of(context).size.width,
                           child: Text(y.toString()),
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreen[50],
+                            border: Border.all(
+                              color: Colors.black,
+                            ),
+                          ),
                         ),
                       ),
                   ],
