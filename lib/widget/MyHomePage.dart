@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Divider(),
             SizedBox(
@@ -67,7 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       Expanded(
                         child: Container(
                           height: MediaQuery.of(context).size.width,
-                          child: Text(y.toString()),
+                          child:
+                              Text(y.toString(), textAlign: TextAlign.center),
                           decoration: BoxDecoration(
                             color: Colors.lightGreen[50],
                             border: Border.all(
